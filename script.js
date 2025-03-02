@@ -89,3 +89,134 @@ document.getElementById('btn_c_2')
         createElement1.appendChild(createElement2);
         historylocation.appendChild(createElement1);
         totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task')
+            document.getElementById('removeit').remove('0')
+        }
+    })
+
+document.getElementById('btn_c_3')
+    .addEventListener('click', function () {
+        alert('Board updated successfully')
+        this.disabled = true;
+        let historylocation = document.getElementById('history');
+        let createElement1 = document.createElement('div');
+        createElement1.classList.add('bg-slate-100', 'p-4','m-4', 'rounded-xl');
+        let createElement2 = document.createElement('p');
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes().toString().padStart(2, '0'); // E
+        let seconds = now.getSeconds().toString().padStart(2, '0'); // 
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        createElement2.innerText = `You have Complete The Task Optimize Home page at ${timeString}`;
+        createElement1.appendChild(createElement2);
+        historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
+    })
+
+document.getElementById('btn_c_4')
+    .addEventListener('click', function () {
+        alert('Board updated successfully')
+        this.disabled = true;
+        let historylocation = document.getElementById('history');
+        let createElement1 = document.createElement('div');
+        createElement1.classList.add('bg-slate-100', 'p-4','m-4', 'rounded-xl');
+        let createElement2 = document.createElement('p');
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes().toString().padStart(2, '0'); // E
+        let seconds = now.getSeconds().toString().padStart(2, '0'); // 
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        createElement2.innerText = `You have Complete The Task Add new emoji 🤲 at ${timeString}`;
+        createElement1.appendChild(createElement2);
+        historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
+    })
+
+document.getElementById('btn_c_5')
+    .addEventListener('click', function () {
+        alert('Board updated successfully')
+        this.disabled = true;
+        let historylocation = document.getElementById('history');
+        let createElement1 = document.createElement('div');
+        createElement1.classList.add('bg-slate-100', 'p-4','m-4', 'rounded-xl');
+        let createElement2 = document.createElement('p');
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes().toString().padStart(2, '0'); // E
+        let seconds = now.getSeconds().toString().padStart(2, '0'); // 
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        createElement2.innerText = `You have Complete The Task Integrate OpenAI API at ${timeString}`;
+        createElement1.appendChild(createElement2);
+        historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
+    })
+
+document.getElementById('btn_c_6')
+    .addEventListener('click', function () {
+        alert('Board updated successfully')
+        this.disabled = true;
+        let historylocation = document.getElementById('history');
+        let createElement1 = document.createElement('div');
+        createElement1.classList.add('bg-slate-100', 'p-4','m-4', 'rounded-xl');
+        let createElement2 = document.createElement('p');
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes().toString().padStart(2, '0'); // E
+        let seconds = now.getSeconds().toString().padStart(2, '0'); // 
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        let timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
+        createElement2.innerText = `You have Complete The Task Improve Job searching at ${timeString}`;
+        createElement1.appendChild(createElement2);
+        historylocation.appendChild(createElement1);
+        totalTask -= 1
+        totalTaskMark += 1
+        document.getElementById('task').innerText = totalTask;
+        document.getElementById('task_mark').innerText = totalTaskMark;
+        if (totalTask == 0) {
+            alert('Congrates! You have completed all the current task');
+            document.getElementById('removeit').remove('0')
+        }
+    })
+
+document.getElementById('clear_history')
+.addEventListener('click', function(){
+    const historyloc = document.getElementById('history');
+    historyloc.innerHTML = ''
+})
+
+document.getElementById('blog_sector')
+.addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
